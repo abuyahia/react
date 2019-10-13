@@ -3,7 +3,6 @@ import React ,{Component} from 'react';
 class App extends Component {
  
  constructor(props){
-  console.log("constructor");
     super(props);
     this.state = {
       items: [],
@@ -11,10 +10,8 @@ class App extends Component {
     }
  }
   
-    render(){
-      console.log("render");
+    render(){       
       var { isLoaded, items } = this.state;
-
         if (!isLoaded){
           console.log(isLoaded)
             return(
@@ -22,7 +19,6 @@ class App extends Component {
             )
         }
         else{
-          console.log(isLoaded)
             return (
               <div className="App">
                 <ul>
